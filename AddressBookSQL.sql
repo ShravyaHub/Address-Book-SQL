@@ -19,3 +19,5 @@ INSERT INTO AddressBook(FirstName, LastName, Address, City, State, Zip, PhoneNum
 UPDATE AddressBook SET Address = 'J P Nagar' WHERE FirstName = 'Shravya';
 
 DELETE FROM AddressBook WHERE FirstName = 'Radhika';
+
+SELECT * FROM AddressBook WHERE City = 'Bangalore';
