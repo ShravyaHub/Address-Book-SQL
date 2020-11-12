@@ -2,7 +2,7 @@ CREATE DATABASE AddressBookService;
 USE AddressBookService;
 
 CREATE TABLE AddressBook(
-    FirstName VARCHAR(20) NOT NULL PRIMARY KEY,
+    FirstName VARCHAR(20) NOT NULL,
     LastName VARCHAR(20) NOT NULL,
     Address VARCHAR(100) NOT NULL,
     City VARCHAR(20) NOT NULL,
@@ -25,3 +25,18 @@ SELECT * FROM AddressBook WHERE City = 'Bangalore';
 SELECT COUNT(City) FROM AddressBook WHERE City = 'Bangalore';
 
 SELECT * FROM AddressBook WHERE City = 'Bangalore' ORDER BY FirstName ASC;
+
+ALTER TABLE AddressBook ADD AddressBookName VARCHAR(20);
+
+ALTER TABLE AddressBook ADD AddressBookName VARCHAR(20);
+
+ALTER TABLE AddressBook ADD AddressBookType VARCHAR(20);
+
+UPDATE AddressBook SET AddressBookName = 'AddressBook' WHERE FirstName = 'Shravya';
+
+UPDATE AddressBook SET AddressBookType = 'Family' WHERE FirstName = 'Shravya';
+
+UPDATE AddressBook SET AddressBookName = 'AddressBook' WHERE FirstName = 'Radhika';
+
+UPDATE AddressBook SET AddressBookType = 'Friend' WHERE FirstName = 'Radhika';
+
