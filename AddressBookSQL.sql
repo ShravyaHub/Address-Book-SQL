@@ -21,3 +21,5 @@ UPDATE AddressBook SET Address = 'J P Nagar' WHERE FirstName = 'Shravya';
 DELETE FROM AddressBook WHERE FirstName = 'Radhika';
 
 SELECT * FROM AddressBook WHERE City = 'Bangalore';
+
+SELECT COUNT(City) FROM AddressBook WHERE City = 'Bangalore';
