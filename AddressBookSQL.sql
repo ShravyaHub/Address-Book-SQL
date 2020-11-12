@@ -40,3 +40,5 @@ UPDATE AddressBook SET AddressBookName = 'AddressBook' WHERE FirstName = 'Radhik
 
 UPDATE AddressBook SET AddressBookType = 'Friend' WHERE FirstName = 'Radhika';
 
+SELECT COUNT(AddressBookType) FROM AddressBook WHERE AddressBookType = 'Family';
+
