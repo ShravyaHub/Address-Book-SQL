@@ -42,6 +42,10 @@ UPDATE AddressBook SET AddressBookType = 'Friend' WHERE FirstName = 'Radhika';
 
 SELECT COUNT(AddressBookType) FROM AddressBook WHERE AddressBookType = 'Family';
 
+UPDATE AddressBook SET AddressBookName = 'Family' WHERE FirstName = 'Shravya';
+
+UPDATE AddressBook SET AddressBookName = 'Friend' WHERE FirstName = 'Radhika';
+
 CREATE TABLE Family(
     FirstName VARCHAR(20) NOT NULL,
     LastName VARCHAR(20) NOT NULL,
